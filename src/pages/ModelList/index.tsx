@@ -100,14 +100,14 @@ const TableList: React.FC = () => {
     },
     
     {
-      title: '图片数',
+      title: '模型类别',
       dataIndex: 'type',
       key: 'type',
       sorter: true,
       hideInForm: true,
     },
     {
-      title: '下载链接',
+      title: '模型来源',
       dataIndex: 'origin',
       key: 'origin',
       render: (dom, entity) => {
@@ -124,7 +124,7 @@ const TableList: React.FC = () => {
       },
     },
     {
-      title: 'url',
+      title: 'http接口',
       dataIndex: 'size',
       key: 'size',
       render: (_, record) => [

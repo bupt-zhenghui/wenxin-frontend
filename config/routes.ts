@@ -15,25 +15,20 @@ export default [
   },
   {
     path: '/',
-    redirect: '/welcome',
+    redirect: '/dataset/info',
   },
-  {
-    path: '/welcome',
-    name: 'welcome',
-    icon: 'smile',
-    component: './Welcome',
-  },
-  {
-    name: 'capfilt',
-    icon: 'form',
-    path: '/formstepform',
-    component: './FormStepForm',
-  },
+  
   {
     path: '/dataset',
     name: '数据集',
     icon: 'crown',
     routes: [
+      {
+        path: 'info',
+        name: '数据集管理',
+        icon: 'smile',
+        component: './ListTableList',
+      },
       {
         path: 'coco',
         name: 'COCO',
@@ -51,23 +46,31 @@ export default [
       },
     ],
   },
-  {
-    path: 'info',
-    name: '数据集管理',
-    icon: 'smile',
-    component: './ListTableList',
-  },
+  
   {
     name: '模型管理',
     icon: 'smile',
     path: '/model',
-    component: './ModelListTableList',
+    component: './ModelList',
   },
   {
     name: '任务列表',
     icon: 'table',
-    path: '/listbasiclist',
-    component: './ListBasicList',
+    path: '/task',
+    routes: [
+      {
+        name: '新建任务',
+        icon: 'form',
+        path: 'form',
+        component: './FormStepForm',
+      },
+      {
+        path: 'table',
+        name: '任务列表',
+        icon: 'smile',
+        component: './ListBasicList',
+      },
+    ]
   },
   {
     component: './404',

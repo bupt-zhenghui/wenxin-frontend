@@ -1,1 +1,1 @@
-export const backendAPI = 'http://10.129.119.201:8888';
+export const backendAPI = 'http://127.0.0.1:9952';

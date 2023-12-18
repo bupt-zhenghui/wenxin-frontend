@@ -1,0 +1,344 @@
+
+> ant-design-pro@5.2.0 start
+> cross-env UMI_ENV=dev umi dev --port=9953
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Bundle with webpack 5...
+⏱️  MFSU Enabled
+🚀 Starting Umi UI using umi@3.5.41...
+🌈 Umi UI mini Ready on port 3000.
+Starting the development server...
+ℹ Compiling Webpack
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-ui/lib/bubble') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+✔ Webpack: Compiled successfully in 7.35s
+ DONE  Compiled successfully in 7442ms2:55:33 PM
+
+
+  App running at:
+  - Local:   http://localhost:9953 (copy to clipboard failed)
+  - Network: http://172.17.0.5:9953
+[change] config/routes.ts
+ WAIT  Compiling...2:59:12 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.47s
+ DONE  Compiled successfully in 1482ms2:59:13 PM
+
+[change] config/routes.ts
+ WAIT  Compiling...3:00:21 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.16s
+ DONE  Compiled successfully in 1163ms3:00:22 PM
+
+[change] config/routes.ts
+ WAIT  Compiling...3:01:20 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.04s
+ DONE  Compiled successfully in 1046ms3:01:21 PM
+
+[change] config/routes.ts
+(node:21821) UnhandledPromiseRejectionWarning: SyntaxError: /workspace/wenxin/wenxin-frontend/config/routes.ts: Unexpected token (68:8)
+
+  66 |       },
+  67 |       {
+> 68 |         {
+     |         ^
+  69 |           name: 'capfilt',
+  70 |           icon: 'form',
+  71 |           path: '/form',
+    at instantiate (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:26189:32)
+    at constructor (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:26476:12)
+    at Object.raise (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:29456:19)
+    at Object.unexpected (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:29494:16)
+    at Object.parsePropertyName (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:39974:24)
+    at Object.parsePropertyDefinition (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:39805:22)
+    at Object.parseObjectLike (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:39725:21)
+    at Object.parseExprAtom (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:39115:23)
+    at Object.parseExprSubscripts (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38765:23)
+    at Object.parseUpdate (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38744:21)
+    at Object.parseMaybeUnary (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38715:23)
+    at Object.parseMaybeUnary (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:36917:20)
+    at Object.parseMaybeUnaryOrPrivate (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38509:61)
+    at Object.parseExprOps (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38516:23)
+    at Object.parseMaybeConditional (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38486:23)
+    at Object.parseMaybeAssign (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/babel/bundle.js:38438:21)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21821) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:21821) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[change] config/routes.ts
+ WAIT  Compiling...3:03:25 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.14s
+ DONE  Compiled successfully in 1142ms3:03:26 PM
+
+[change] config/routes.ts
+ WAIT  Compiling...3:04:12 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.20s
+ DONE  Compiled successfully in 1204ms3:04:14 PM
+
+[change] config/routes.ts
+ WAIT  Compiling...3:04:37 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 677.05ms
+ DONE  Compiled successfully in 679ms3:04:38 PM
+
+[change] config/routes.ts
+ WAIT  Compiling...3:05:21 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.07s
+ DONE  Compiled successfully in 1079ms3:05:22 PM
+
+[change] config/routes.ts
+[change] config/routes.ts
+[change] config/routes.ts
+ WAIT  Compiling...3:11:38 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 2.16s
+ DONE  Compiled successfully in 2170ms3:11:41 PM
+
+ WAIT  Compiling...3:14:17 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.52s
+ DONE  Compiled successfully in 1524ms3:14:19 PM
+
+ WAIT  Compiling...3:16:50 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 2.33s
+ DONE  Compiled successfully in 2335ms3:16:52 PM
+
+ WAIT  Compiling...3:17:14 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.03s
+ DONE  Compiled successfully in 1033ms3:17:16 PM
+
+ WAIT  Compiling...3:17:29 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.11s
+ DONE  Compiled successfully in 1114ms3:17:30 PM
+
+ WAIT  Compiling...3:18:32 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.37s
+ DONE  Compiled successfully in 1384ms3:18:34 PM
+
+ WAIT  Compiling...3:18:37 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.07s
+ DONE  Compiled successfully in 1073ms3:18:39 PM
+
+ WAIT  Compiling...3:18:48 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 813.14ms
+ DONE  Compiled successfully in 815ms3:18:49 PM
+
+ WAIT  Compiling...3:19:07 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 702.53ms
+ DONE  Compiled successfully in 705ms3:19:08 PM
+
+ WAIT  Compiling...3:19:13 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 772.84ms
+ DONE  Compiled successfully in 775ms3:19:14 PM
+
+ WAIT  Compiling...3:19:21 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 854.81ms
+ DONE  Compiled successfully in 857ms3:19:22 PM
+
+ WAIT  Compiling...3:19:30 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 909.86ms
+ DONE  Compiled successfully in 912ms3:19:31 PM
+
+ WAIT  Compiling...3:20:03 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 926.51ms
+ DONE  Compiled successfully in 929ms3:20:04 PM
+
+ WAIT  Compiling...3:20:32 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 747.74ms
+ DONE  Compiled successfully in 750ms3:20:33 PM
+
+ WAIT  Compiling...3:21:15 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.18s
+ DONE  Compiled successfully in 1182ms3:21:16 PM
+
+ WAIT  Compiling...3:22:23 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.07s
+ DONE  Compiled successfully in 1073ms3:22:24 PM
+
+ WAIT  Compiling...3:22:51 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.43s
+ DONE  Compiled successfully in 1429ms3:22:52 PM
+
+ WAIT  Compiling...3:25:56 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.62s
+ DONE  Compiled successfully in 1628ms3:25:58 PM
+
+ WAIT  Compiling...3:26:21 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.20s
+ DONE  Compiled successfully in 1202ms3:26:23 PM
+
+ WAIT  Compiling...3:26:25 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 818.80ms
+ DONE  Compiled successfully in 821ms3:26:26 PM
+
+ WAIT  Compiling...3:28:54 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.58s
+ DONE  Compiled successfully in 1589ms3:28:56 PM
+
+ WAIT  Compiling...3:29:20 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.05s
+ DONE  Compiled successfully in 1054ms3:29:21 PM
+
+
+> ant-design-pro@5.2.0 start
+> cross-env UMI_ENV=dev umi dev --port=9953
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Bundle with webpack 5...
+⏱️  MFSU Enabled
+🚀 Starting Umi UI using umi@3.5.41...
+🌈 Umi UI mini Ready on port 3000.
+Starting the development server...
+ℹ Compiling Webpack
+Cannot find module './data' from '/workspace/wenxin/wenxin-frontend/src/pages/ModelList'
+Error: Cannot find module './data' from '/workspace/wenxin/wenxin-frontend/src/pages/ModelList'
+    at Function.resolveSync [as sync] (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/deps/compiled/resolve/index.js:1:11108)
+    at /workspace/wenxin/wenxin-frontend/node_modules/@umijs/utils/lib/parseRequireDeps/parseRequireDeps.js:77:153
+    at Array.map (<anonymous>)
+    at parse (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/utils/lib/parseRequireDeps/parseRequireDeps.js:77:100)
+    at parseRequireDeps (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/utils/lib/parseRequireDeps/parseRequireDeps.js:89:50)
+    at /workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:69:56
+    at Array.reduce (<anonymous>)
+    at registerBabel (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:68:31)
+    at getMockData (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/utils.js:130:3)
+    at Object.<anonymous> (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:105:48)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:40:103)
+    at _next (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:42:194)
+    at /workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:42:364
+    at new Promise (<anonymous>)
+    at Object.fn (/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-built-in/lib/plugins/commands/dev/mock/mock.js:42:97)
+ info  如果你需要进交流群，请访问 https://fb.umijs.org
+
+> ant-design-pro@5.2.0 start
+> cross-env UMI_ENV=dev umi dev --port=9953
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Bundle with webpack 5...
+⏱️  MFSU Enabled
+🚀 Starting Umi UI using umi@3.5.41...
+🌈 Umi UI mini Ready on port 3000.
+Starting the development server...
+ℹ Compiling Webpack
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-ui/lib/bubble') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+✔ Webpack: Compiled successfully in 33.74s
+ DONE  Compiled successfully in 33817ms4:03:55 PM
+
+
+  App running at:
+  - Local:   http://localhost:9953 (copy to clipboard failed)
+  - Network: http://172.17.0.5:9953
+ WAIT  Compiling...4:34:36 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 3.07s
+ DONE  Compiled successfully in 3103ms4:34:39 PM
+
+[change] config/routes.ts
+[change] config/routes.ts
+[change] config/routes.ts
+ WAIT  Compiling...4:35:19 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.99s
+ DONE  Compiled successfully in 1994ms4:35:22 PM
+
+ WAIT  Compiling...4:36:47 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 2.28s
+ DONE  Compiled successfully in 2285ms4:36:49 PM
+
+ WAIT  Compiling...4:39:40 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 2.27s
+ DONE  Compiled successfully in 2281ms4:39:43 PM
+
+ WAIT  Compiling...4:39:58 PM
+
+ℹ Compiling Webpack
+✔ Webpack: Compiled successfully in 1.11s
+ DONE  Compiled successfully in 1117ms4:39:59 PM
+
+
+> ant-design-pro@5.2.0 start
+> cross-env UMI_ENV=dev umi dev --port=9953
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Bundle with webpack 5...
+⏱️  MFSU Enabled
+🚀 Starting Umi UI using umi@3.5.41...
+🌈 Umi UI mini Ready on port 3000.
+Starting the development server...
+ℹ Compiling Webpack
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+[MFSU] require('/workspace/wenxin/wenxin-frontend/node_modules/@umijs/preset-ui/lib/bubble') found in /workspace/wenxin/wenxin-frontend/src/.umi/umi.ts, which will broken the MFSU prebuild match, please change to esm module import.
+✔ Webpack: Compiled successfully in 27.06s
+ DONE  Compiled successfully in 27091ms4:49:29 PM
+
+
+  App running at:
+  - Local:   http://localhost:9953 (copy to clipboard failed)
+  - Network: http://172.17.0.5:9953
