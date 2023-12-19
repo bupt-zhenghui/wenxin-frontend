@@ -1,1 +1,1 @@
-export const backendAPI = 'http://127.0.0.1:9952';
+export const backendAPI = 'http://sky77.deepfashion.net:9952';

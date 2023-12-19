@@ -15,7 +15,7 @@ export type TableListItem = {
   name: string;
   type: string;
   origin: string;
-  http: string;
+  api: string;
 };
 
 export type TableListPagination = {

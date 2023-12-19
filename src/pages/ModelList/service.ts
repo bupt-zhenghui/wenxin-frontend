@@ -2,7 +2,7 @@
 /* eslint-disable */
 import { request } from 'umi';
 import { TableListItem } from './data';
-import { backendAPI } from '../consts';
+import {backendAPI} from "@/pages/consts";
 
 /** 获取规则列表 GET /api/rule */
 export async function rule(
@@ -20,7 +20,7 @@ export async function rule(
     /** 列表的内容总数 */
     total?: number;
     success?: boolean;
-  }>('api/rule', {
+  }>(backendAPI + '/model/list', {
     method: 'GET',
     params: {
       ...params,

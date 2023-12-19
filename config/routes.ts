@@ -17,11 +17,12 @@ export default [
     path: '/',
     redirect: '/dataset/info',
   },
-  
+
   {
     path: '/dataset',
     name: '数据集',
     icon: 'crown',
+    hideChildrenInMenu: true,
     routes: [
       {
         path: 'info',
@@ -42,11 +43,11 @@ export default [
         component: './ProfileBasicThree',
       },
       {
-        component: './404',
+        component: './ListTableList',
       },
     ],
   },
-  
+
   {
     name: '模型管理',
     icon: 'smile',

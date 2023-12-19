@@ -1,5 +1,5 @@
 import { PlusOutlined } from '@ant-design/icons';
-import { Button, message, Input, Drawer } from 'antd';
+import {Button, message, Input, Drawer, Form} from 'antd';
 import React, { useEffect, useState, useRef } from 'react';
 import { PageContainer, FooterToolbar } from '@ant-design/pro-layout';
 import type { ProColumns, ActionType } from '@ant-design/pro-table';
@@ -11,6 +11,7 @@ import type { FormValueType } from './components/UpdateForm';
 import UpdateForm from './components/UpdateForm';
 import { rule, addRule, updateRule, removeRule } from './service';
 import type { TableListItem, TableListPagination } from './data';
+import {Link} from "umi";
 
 /**
  * 添加节点
@@ -97,12 +98,17 @@ const TableList: React.FC = () => {
       dataIndex: 'name',
       key: 'name',
       sorter: true,
+      render: (dom, entity) => (
+        <Link to="/dataset/coco" >
+          {dom}
+        </Link>
+      )
     },
-    
+
     {
       title: '图片数',
-      dataIndex: 'type',
-      key: 'type',
+      dataIndex: 'size',
+      key: 'size',
       sorter: true,
       hideInForm: true,
     },
@@ -112,12 +118,7 @@ const TableList: React.FC = () => {
       key: 'origin',
       render: (dom, entity) => {
         return (
-          <a
-            onClick={() => {
-              setCurrentRow(entity);
-              setShowDetail(true);
-            }}
-          >
+          <a href={dom} target="_blank">
             {dom}
           </a>
         );
@@ -160,12 +161,10 @@ const TableList: React.FC = () => {
   return (
     <PageContainer>
       <ProTable<TableListItem, TableListPagination>
-        headerTitle="查询表格"
+        headerTitle="数据集表格"
         actionRef={actionRef}
         rowKey="key"
-        search={{
-          labelWidth: 120,
-        }}
+        search={false}
         toolBarRender={() => [
           <Button
             type="primary"
@@ -235,12 +234,14 @@ const TableList: React.FC = () => {
               message: '数据集名称为必填项',
             },
           ]}
+          label="数据集名称"
           width="md"
           name="name"
         />
-        <ProFormTextArea width="md" name="size" />
-        <ProFormTextArea width="md" name="origin" />
-        <ProFormTextArea width="md" name="type" />
+        <ProFormText label="图片数" width="md" name="size" />
+        <ProFormText label="下载链接" width="md" name="origin" />
+        <ProFormText label="数据来源链接" width="md" name="url" />
+        <ProFormText label="数据集类型" width="md" name="type" />
       </ModalForm>
       <UpdateForm
         onSubmit={async (value) => {

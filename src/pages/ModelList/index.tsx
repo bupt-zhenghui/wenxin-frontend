@@ -98,7 +98,6 @@ const TableList: React.FC = () => {
       key: 'name',
       sorter: true,
     },
-    
     {
       title: '模型类别',
       dataIndex: 'type',
@@ -124,9 +123,9 @@ const TableList: React.FC = () => {
       },
     },
     {
-      title: 'http接口',
-      dataIndex: 'size',
-      key: 'size',
+      title: '调用接口',
+      dataIndex: 'api',
+      key: 'api',
       render: (_, record) => [
         <a
           key="config"
@@ -160,12 +159,10 @@ const TableList: React.FC = () => {
   return (
     <PageContainer>
       <ProTable<TableListItem, TableListPagination>
-        headerTitle="查询表格"
+        headerTitle="模型表格"
         actionRef={actionRef}
         rowKey="key"
-        search={{
-          labelWidth: 120,
-        }}
+        search={false}
         toolBarRender={() => [
           <Button
             type="primary"
@@ -214,7 +211,7 @@ const TableList: React.FC = () => {
         </FooterToolbar>
       )}
       <ModalForm
-        title="新建数据集"
+        title="新建模型"
         width="400px"
         visible={createModalVisible}
         onVisibleChange={handleModalVisible}
