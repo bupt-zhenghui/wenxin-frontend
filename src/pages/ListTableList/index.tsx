@@ -104,7 +104,6 @@ const TableList: React.FC = () => {
         </Link>
       )
     },
-
     {
       title: '图片数',
       dataIndex: 'size',
@@ -113,9 +112,16 @@ const TableList: React.FC = () => {
       hideInForm: true,
     },
     {
+      title: '类别',
+      dataIndex: 'type',
+      key: 'type',
+      sorter: true,
+      hideInForm: true,
+    },
+    {
       title: '下载链接',
-      dataIndex: 'origin',
-      key: 'origin',
+      dataIndex: 'url',
+      key: 'url',
       render: (dom, entity) => {
         return (
           <a href={dom} target="_blank">
@@ -125,18 +131,12 @@ const TableList: React.FC = () => {
       },
     },
     {
-      title: 'url',
-      dataIndex: 'size',
-      key: 'size',
-      render: (_, record) => [
-        <a
-          key="config"
-          onClick={() => {
-            //handleUpdateModalVisible(true);
-            setCurrentRow(record);
-          }}
-        >
-          详情
+      title: '数据来源',
+      dataIndex: 'origin',
+      key: 'origin',
+      render: (dom, _) => [
+        <a href={dom} target="_blank">
+          {dom}
         </a>,
       ],
     },
@@ -145,6 +145,14 @@ const TableList: React.FC = () => {
       dataIndex: 'option',
       valueType: 'option',
       render: (_, record) => [
+        <a
+            onClick={() => {
+              setCurrentRow(record);
+              setShowDetail(true);
+            }}
+          >
+            详情
+        </a>,
         <a
           key="config"
           onClick={() => {
@@ -239,9 +247,10 @@ const TableList: React.FC = () => {
           name="name"
         />
         <ProFormText label="图片数" width="md" name="size" />
+        <ProFormText label="数据集类型" width="md" name="type" />
         <ProFormText label="下载链接" width="md" name="origin" />
         <ProFormText label="数据来源链接" width="md" name="url" />
-        <ProFormText label="数据集类型" width="md" name="type" />
+
       </ModalForm>
       <UpdateForm
         onSubmit={async (value) => {

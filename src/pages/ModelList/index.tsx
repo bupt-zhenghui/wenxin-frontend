@@ -111,12 +111,7 @@ const TableList: React.FC = () => {
       key: 'origin',
       render: (dom, entity) => {
         return (
-          <a
-            onClick={() => {
-              setCurrentRow(entity);
-              setShowDetail(true);
-            }}
-          >
+          <a href={dom} target="_blank">
             {dom}
           </a>
         );
@@ -126,23 +121,27 @@ const TableList: React.FC = () => {
       title: '调用接口',
       dataIndex: 'api',
       key: 'api',
-      render: (_, record) => [
-        <a
-          key="config"
-          onClick={() => {
-            //handleUpdateModalVisible(true);
-            setCurrentRow(record);
-          }}
-        >
-          详情
-        </a>,
-      ],
+      render: (dom, entity) => {
+        return (
+          <a href={dom} target="_blank">
+            {dom}
+          </a>
+        );
+      },
     },
     {
       title: '操作',
       dataIndex: 'option',
       valueType: 'option',
       render: (_, record) => [
+        <a
+            onClick={() => {
+              setCurrentRow(record);
+              setShowDetail(true);
+            }}
+          >
+            详情
+        </a>,
         <a
           key="config"
           onClick={() => {
@@ -229,15 +228,16 @@ const TableList: React.FC = () => {
           rules={[
             {
               required: true,
-              message: '数据集名称为必填项',
+              message: '模型名称为必填项',
             },
           ]}
+          label="模型名称"
           width="md"
           name="name"
         />
-        <ProFormTextArea width="md" name="size" />
-        <ProFormTextArea width="md" name="origin" />
-        <ProFormTextArea width="md" name="type" />
+        <ProFormText width="md" label="模型类别" name="type" />
+        <ProFormText width="md" label="模型来源" name="origin" />
+        <ProFormText width="md" label="调用接口" name="api" />
       </ModalForm>
       <UpdateForm
         onSubmit={async (value) => {

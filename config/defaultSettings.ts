@@ -14,7 +14,7 @@ const Settings: LayoutSettings & {
   colorWeak: false,
   title: '文心图文数据',
   pwa: false,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  logo: 'https://img-1300769438.cos.ap-beijing.myqcloud.com/images/202312191634899.svg',
   iconfontUrl: '',
 };
 

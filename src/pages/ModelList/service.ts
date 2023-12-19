@@ -31,17 +31,17 @@ export async function rule(
 
 /** 更改规则 PUT /api/rule */
 export async function updateRule(data: { [key: string]: any }, options?: { [key: string]: any }) {
-  return request<TableListItem>('api/rule', {
+  return request<TableListItem>(backendAPI + "/model/update", {
     //'api/rule'
     data,
-    method: 'PUT',
+    method: 'POST',
     ...(options || {}),
   });
 }
 
 /** 新建规则 POST /api/rule */
 export async function addRule(data: { [key: string]: any }, options?: { [key: string]: any }) {
-  return request<TableListItem>('api/rule', {
+  return request<TableListItem>(backendAPI + "/model/insert", {
     data,
     method: 'POST',
     ...(options || {}),

@@ -58,6 +58,7 @@ const UpdateForm: React.FC<UpdateFormProps> = (props) => {
           size: props.values.size,
           origin: props.values.origin,
           type: props.values.type,
+          url: props.values.url,
         }}
         title="基本信息"
       >
@@ -74,16 +75,6 @@ const UpdateForm: React.FC<UpdateFormProps> = (props) => {
         />
         <ProFormText name="size" label="数据集条数" width="md" />
         <ProFormText
-          name="origin"
-          label="数据集来源"
-          width="md"
-          rules={[
-            {
-              message: '数据集url',
-            },
-          ]}
-        />
-        <ProFormText
           name="type"
           label="数据集类别"
           width="md"
@@ -93,6 +84,18 @@ const UpdateForm: React.FC<UpdateFormProps> = (props) => {
             },
           ]}
         />
+        <ProFormText name="url" label="下载链接" width="md" />
+        <ProFormText
+          name="origin"
+          label="数据集来源"
+          width="md"
+          rules={[
+            {
+              message: '数据集url',
+            },
+          ]}
+        />
+
       </StepsForm.StepForm>
     </StepsForm>
   );

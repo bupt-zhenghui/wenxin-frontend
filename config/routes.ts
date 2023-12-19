@@ -58,6 +58,7 @@ export default [
     name: '任务列表',
     icon: 'table',
     path: '/task',
+    hideChildrenInMenu: true,
     routes: [
       {
         name: '新建任务',
@@ -69,6 +70,9 @@ export default [
         path: 'table',
         name: '任务列表',
         icon: 'smile',
+        component: './ListBasicList',
+      },
+      {
         component: './ListBasicList',
       },
     ]

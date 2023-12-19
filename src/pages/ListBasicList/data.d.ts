@@ -4,6 +4,14 @@ export type Member = {
   id: string;
 };
 
+export type TableListItem = {
+  id: number;
+  name: string;
+  size: number;
+  type: number;
+  origin: string;
+};
+
 export type BasicListItemDataType = {
   id: string;
   owner: string;

@@ -17,7 +17,7 @@ import {
 } from 'antd';
 
 import { PageContainer } from '@ant-design/pro-layout';
-import { useRequest } from 'umi';
+import {Link, useRequest} from 'umi';
 import moment from 'moment';
 import OperationModal from './components/OperationModal';
 import { addFakeList, queryFakeList, removeFakeList, updateFakeList } from './service';
@@ -224,13 +224,14 @@ export const ListBasicList: FC = () => {
       </PageContainer>
       <Button
         type="dashed"
-        onClick={() => {
-          setVisible(true);
-        }}
+        // onClick={() => {
+        //   setVisible(true);
+        // }}
         style={{ width: '100%', marginBottom: 8 }}
       >
-        <PlusOutlined />
-        添加
+          <Link to="/task/form">
+              添加
+          </Link>
       </Button>
       <OperationModal
         done={done}
